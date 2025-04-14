@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Reportes</title>
+  </head>
+  <body>
+    <!-- REPORTES -->
+    <div class="main-container">
+      <aside class="sidebar">
+        <!-- imagen -->
+        <div>
+          <img class="image" src="./img/mediCheck.jpg" alt="Logo MediCheck" />
+        </div>
+
+        <hr />
+        <h3>Menú</h3>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="pacientes.html">Pacientes</a></li>
+          <li><a href="index.html">Citas</a></li>
+          <li><a href="historial.html">Historial Médico</a></li>
+          <li><a href="facturacion.html">Facturación</a></li>
+          <li class="active">Reportes</li>
+        </ul>
+        <button onclick="cerrarSesion()">Cerrar sesión</button>
+      </aside>
+
+      <section class="content">
+        <h2>Reportes Generales</h2>
+        <div class="reportes-box">
+          <div class="card">
+            <h4>Pacientes Atendidos</h4>
+            <p>145</p>
+          </div>
+          <div class="card">
+            <h4>Citas del Mes</h4>
+            <p>83</p>
+          </div>
+          <div class="card">
+            <h4>Ingresos Totales</h4>
+            <p>$2,320.00</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- FIN REPORTES -->
+    <footer><p>&copy; 2025 Crixfer. Todos los derechos reservados.</p></footer>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Facturación</title>
+  </head>
+  <body>
+    <!-- FACTURACION -->
+    <div class="main-container">
+      <aside class="sidebar">
+        <!-- imagen -->
+        <div>
+          <img class="image" src="./img/mediCheck.jpg" alt="Logo MediCheck" />
+        </div>
+
+        <hr />
+        <h3>Menú</h3>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="pacientes.html">Pacientes</a></li>
+          <li><a href="index.html">Citas</a></li>
+          <li><a href="historial.html">Historial Médico</a></li>
+          <li class="active">Facturación</li>
+          <li><a href="reportes.html">Reportes</a></li>
+        </ul>
+        <button onclick="cerrarSesion()">Cerrar sesión</button>
+      </aside>
+
+      <section class="content">
+        <h2>Facturación</h2>
+        <div class="factura-box">
+          <table>
+            <thead>
+              <tr>
+                <th>Paciente</th>
+                <th>Fecha</th>
+                <th>Servicio</th>
+                <th>Monto</th>
+                <th>Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Carlos López</td>
+                <td>2024-04-01</td>
+                <td>Consulta general</td>
+                <td>$25.00</td>
+                <td><span class="pagado">Pagado</span></td>
+              </tr>
+              <tr>
+                <td>Lucía Pérez</td>
+                <td>2024-04-03</td>
+                <td>Examen de sangre</td>
+                <td>$15.00</td>
+                <td><span class="pendiente">Pendiente</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+    <!-- FIN FACTURACION -->
+    <footer><p>&copy; 2025 Crixfer. Todos los derechos reservados.</p></footer>
+    <script src="index.js"></script>
+  </body>
+</html>

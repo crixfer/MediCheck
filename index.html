@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>MediCheck</title>
+  </head>
+  <body>
+    <!-- AGENDA DE CITAS -->
+    <div class="main-container">
+      <aside class="sidebar">
+        <!-- imagen -->
+        <div>
+          <img class="image" src="./img/mediCheck.jpg" alt="Logo MediCheck" />
+        </div>
+
+        <hr />
+        <h3>Menú</h3>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="pacientes.html">Pacientes</a></li>
+          <li class="active">Citas</li>
+          <li><a href="historial.html">Historial Médico</a></li>
+          <li><a href="facturacion.html">Facturación</a></li>
+          <li><a href="reportes.html">Reportes</a></li>
+        </ul>
+        <button onclick="cerrarSesion()">Cerrar sesión</button>
+      </aside>
+
+      <section class="content">
+        <h2>Agendar Cita</h2>
+
+        <form class="form-cita">
+          <label>Paciente</label>
+          <input type="text" placeholder="Carlos López" />
+
+          <div class="grid">
+            <div>
+              <label>Fecha</label>
+              <input type="date" value="2024-04-18" />
+            </div>
+            <div>
+              <label>Hora</label>
+              <input type="time" value="09:00" />
+            </div>
+          </div>
+
+          <label>Motivo</label>
+          <textarea placeholder="Consulta de seguimiento"></textarea>
+
+          <button>Agendar</button>
+        </form>
+      </section>
+    </div>
+    <!-- FIN AGENDA DE CITAS -->
+    <footer><p>&copy; 2025 Crixfer. Todos los derechos reservados.</p></footer>
+    <script src="index.js"></script>
+  </body>
+</html>

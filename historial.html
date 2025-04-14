@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Historial</title>
+  </head>
+  <body>
+    <!-- HISTORIAL -->
+    <div class="main-container">
+      <aside class="sidebar">
+        <!-- imagen -->
+        <div>
+          <img class="image" src="./img/mediCheck.jpg" alt="Logo MediCheck" />
+        </div>
+
+        <hr />
+        <h3>Menú</h3>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="pacientes.html">Pacientes</a></li>
+          <li><a href="index.html">Citas</a></li>
+          <li class="active">Historial Médico</li>
+          <li><a href="facturacion.html">Facturación</a></li>
+          <li><a href="reportes.html">Reportes</a></li>
+        </ul>
+        <button onclick="cerrarSesion()">Cerrar sesión</button>
+      </aside>
+
+      <section class="content">
+        <h2>Historial Médico - Carlos López</h2>
+        <div class="historial-box">
+          <div class="entry">
+            <div class="entry-header">
+              <span>🩺</span>
+              <strong>Consulta - 10/03/2024</strong>
+            </div>
+            <p>
+              Motivo: Dolor de cabeza persistente. Se recomienda reposo y
+              acetaminofén.
+            </p>
+          </div>
+
+          <div class="entry">
+            <div class="entry-header">
+              <span>📄</span>
+              <strong>Resultados de Laboratorio - 15/02/2024</strong>
+            </div>
+            <p>
+              Perfil lipídico dentro de rangos normales. Glucosa ligeramente
+              elevada.
+            </p>
+          </div>
+
+          <div class="entry">
+            <div class="entry-header">
+              <span>💊</span>
+              <strong>Tratamiento - 20/01/2024</strong>
+            </div>
+            <p>
+              Inicio de tratamiento para hipertensión. Recetado losartán 50mg
+              diario.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- FIN HISTORIAL -->
+    <footer><p>&copy; 2025 Crixfer. Todos los derechos reservados.</p></footer>
+    <script src="index.js"></script>
+  </body>
+</html>

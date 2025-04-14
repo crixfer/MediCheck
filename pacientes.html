@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pacientes</title>
+  </head>
+  <body>
+    <!-- PACIENTES -->
+    <div class="main-container">
+      <aside class="sidebar">
+        <!-- imagen -->
+        <div>
+          <img class="image" src="./img/mediCheck.jpg" alt="Logo MediCheck" />
+        </div>
+
+        <hr />
+        <h3>Menú</h3>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li class="active">Pacientes</li>
+          <li><a href="index.html">Citas</a></li>
+          <li><a href="historial.html">Historial Médico</a></li>
+          <li><a href="facturacion.html">Facturación</a></li>
+          <li><a href="reportes.html">Reportes</a></li>
+        </ul>
+        <button onclick="cerrarSesion()">Cerrar sesión</button>
+      </aside>
+
+      <section class="content">
+        <h2>Pacientes Registrados</h2>
+
+        <div class="top-bar">
+          <input type="text" placeholder="Buscar paciente..." />
+          <button>➕ Nuevo Paciente</button>
+        </div>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Género</th>
+                <th>Teléfono</th>
+                <th>Última Visita</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Carlos López</td>
+                <td>45</td>
+                <td>Masculino</td>
+                <td>+504 9999-1234</td>
+                <td>05/04/2024</td>
+                <td><button>👁 Ver</button> <button>✏ Editar</button></td>
+              </tr>
+              <tr>
+                <td>Lucía Pérez</td>
+                <td>32</td>
+                <td>Femenino</td>
+                <td>+504 8888-5678</td>
+                <td>28/03/2024</td>
+                <td><button>👁 Ver</button> <button>✏ Editar</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+    <!-- FIN PACIENTES -->
+    <footer><p>&copy; 2025 Crixfer. Todos los derechos reservados.</p></footer>
+    <script src="index.js"></script>
+  </body>
+</html>

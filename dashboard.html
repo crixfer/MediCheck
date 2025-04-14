@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <!-- DASHBOARD -->
+    <div class="main-container">
+      <aside class="sidebar">
+        <!-- imagen -->
+        <div>
+          <img class="image" src="./img/mediCheck.jpg" alt="Logo MediCheck" />
+        </div>
+
+        <hr />
+        <h3>Menú</h3>
+        <ul>
+          <li class="active">Dashboard</li>
+          <li><a href="pacientes.html">Pacientes</a></li>
+          <li><a href="index.html">Citas</a></li>
+          <li><a href="historial.html">Historial Médico</a></li>
+          <li><a href="facturacion.html">Facturación</a></li>
+          <li><a href="reportes.html">Reportes</a></li>
+        </ul>
+        <button onclick="cerrarSesion()">Cerrar sesión</button>
+      </aside>
+
+      <section class="content">
+        <h2>Bienvenido/a, Walquidia Cruz 👋</h2>
+
+        <div class="stats-cards">
+          <div class="card">
+            <h4>Pacientes</h4>
+            <p>120</p>
+          </div>
+          <div class="card">
+            <h4>Citas Hoy</h4>
+            <p>8</p>
+          </div>
+          <div class="card">
+            <h4>Ingresos del Mes</h4>
+            <p>$1,750.00</p>
+          </div>
+          <div class="card">
+            <h4>Reportes Pendientes</h4>
+            <p>3</p>
+          </div>
+        </div>
+
+        <div class="quick-links">
+          <h3>Accesos Rápidos</h3>
+          <div class="links">
+            <button>📋 <a href="pacientes.html">Ver Pacientes</a></button>
+            <button>➕ <a href="index.html">Nueva Citas</a></button>
+            <button>💵 <a href="facturacion.html">Ver Facturas</a></button>
+            <button>📊 <a href="reportes.html">Generar Reportes</a></button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- FIN DASHBOARD -->
+    <footer><p>&copy; 2025 Crixfer. Todos los derechos reservados.</p></footer>
+    <script src="index.js"></script>
+  </body>
+</html>
