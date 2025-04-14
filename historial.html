@@ -4,11 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Historial</title>
   </head>
   <body>
     <!-- HISTORIAL -->
     <div class="main-container">
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
       <aside class="sidebar">
         <!-- imagen -->
         <div>
@@ -16,16 +24,35 @@
         </div>
 
         <hr />
-        <h3>Menú</h3>
+
         <ul>
-          <li><a href="dashboard.html">Dashboard</a></li>
-          <li><a href="pacientes.html">Pacientes</a></li>
-          <li><a href="index.html">Citas</a></li>
-          <li class="active">Historial Médico</li>
-          <li><a href="facturacion.html">Facturación</a></li>
-          <li><a href="reportes.html">Reportes</a></li>
+          <li>
+            <i class="fa-solid fa-table-columns"></i>
+            <a href="dashboard.html">Dashboard</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-hospital-user"></i>
+            <a href="pacientes.html">Pacientes</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-user-plus"></i> <a href="index.html">Citas</a>
+          </li>
+          <li class="active">
+            <i class="fa-solid fa-laptop-medical"></i> Historial Médico
+          </li>
+          <li>
+            <i class="fa-solid fa-receipt"></i>
+            <a href="facturacion.html">Facturación</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-notes-medical"></i>
+            <a href="reportes.html">Reportes</a>
+          </li>
         </ul>
-        <button onclick="cerrarSesion()">Cerrar sesión</button>
+        <hr />
+        <button onclick="cerrarSesion()">
+          <i class="fa-solid fa-right-from-bracket"></i> Cerrar sesión
+        </button>
       </aside>
 
       <section class="content">

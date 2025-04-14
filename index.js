@@ -49,3 +49,34 @@ function cerrarSesion() {
   localStorage.removeItem("logueado");
   window.location.href = "login.html";
 }
+
+// TOGGLE ********************************************
+function toggleMenu() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.classList.toggle("active");
+}
+
+// Asegúrate de que el menú esté activo al cargar la página si el ancho es mayor a 768px
+document.addEventListener("DOMContentLoaded", () => {
+  const sidebar = document.querySelector(".sidebar");
+  if (window.innerWidth > 768) {
+    sidebar.classList.add("active");
+  }
+});
+
+// Corrección: cerrar el menú al ampliar la pantalla
+window.addEventListener("resize", () => {
+  const sidebar = document.querySelector(".sidebar");
+
+  //si mayor a 768
+  if (window.innerWidth > 768) {
+    if (!sidebar.classList.contains("active")) {
+      sidebar.classList.add("active");
+    }
+  } else {
+    //si menor a 768
+    if (sidebar.classList.contains("active")) {
+      sidebar.classList.remove("active");
+    }
+  }
+});

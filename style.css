@@ -79,6 +79,99 @@ footer {
   background-color: #1e3a8a;
 }
 
+/* SIDEBAR TOGGLE */
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+
+  .sidebar.active {
+    display: block;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .top-bar input {
+    width: 100%;
+  }
+
+  .form-cita input,
+  .form-cita textarea {
+    width: 100%;
+  }
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    padding: 20px;
+    background-color: #1e3a8a;
+  }
+}
+
+.main-container {
+  display: flex;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar {
+  width: 250px;
+  min-height: 100vh;
+  background-color: #1e3a8a;
+  transition: transform 0.3s ease;
+  transform: translateX(-250px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.sidebar.active {
+  transform: translateX(0);
+}
+
+.content {
+  flex: 1;
+  transition: margin-left 0.3s ease;
+  padding: 20px;
+  margin-left: 0;
+}
+
+.sidebar.active ~ .content {
+  margin-left: 250px;
+}
+
+.hamburger {
+  display: flex;
+  justify-content: center;
+  /* position: absolute; */
+  /* top: 20px;
+  left: 20px; */
+  /* z-index: 3; */
+  background-color: #1e3a8a;
+  color: white;
+  padding: 10px;
+  /* border-radius: 5px; */
+  cursor: pointer;
+  font-size: 24px;
+}
+
 /* DASHBOARD */
 body {
   margin: 0;
