@@ -10,7 +10,10 @@
     <!-- LOGIN -->
     <div class="login-container">
       <div class="login-box">
-        <h2>Sistema de Gestión de Pacientes</h2>
+        <div class="imagenLogoContainer">
+          <img class="imagenLogo" src="./img/mediCheck.jpg" alt="Logo" />
+        </div>
+        <!-- <h2>Sistema de Gestión de Pacientes</h2> -->
         <form>
           <label class="loginLabel" for="usuario">Usuario</label>
           <input
@@ -22,6 +25,7 @@
 
           <label class="loginLabel" for="password">Contraseña</label>
           <input
+            class="loginInput"
             type="password"
             id="contrasena"
             placeholder="Ingresa tu contraseña"
@@ -29,6 +33,7 @@
 
           <button class="loginBoton" type="submit">Iniciar Sesión</button>
         </form>
+        <p class="error" id="mensaje-error" class="error-msg"></p>
       </div>
     </div>
     <!-- FIN LOGIN -->
